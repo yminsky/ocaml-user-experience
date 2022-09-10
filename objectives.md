@@ -1,12 +1,15 @@
 ---
-title: A vision for the OCaml user-experience
+title: Objectives for the OCaml Developer-Experience
 ---
 
 The goal of this document is to sketch out goals for what the OCaml
-user-experience should look like.  This is less about any particular
-tool or technology, and more about what it should feel like to users.
+developer-experience should look like.  This is less about any
+particular tool or technology, and more about what it should feel like
+to developers.
 
-# Objectives
+The objectives themselves are phrased as statements that we want to be
+true, rather than things that have already been achieved.
+
 
 ## The experience for newbies is simple
 
@@ -16,6 +19,9 @@ majority of their interactions happen.
 
 Also, the experience for setting up a new project and starting to
 write code should have as few steps as possible.
+
+## OCaml workflows are organized around a simple, understandable model
+
 
 ## The workflow for newbies scales up seamlessly to larger projects
 
@@ -64,3 +70,19 @@ with more setup being acceptable for other editors.
 
 That said, the command-line experience must still be efficient and
 convenient.
+
+## The tools are helpful, especially to newbies
+
+The tools should go out of their way to make it easy for people who
+are encountering some aspect of the tool for the first time.
+
+For example:
+
+- Tools should provide helpful feedback for users when they make
+  common mistakes, like misspelling a subcommand, or trying to start a
+  build before creating the necessary build files.
+
+- Tools should prefer helpfulness over concision. Better to spend a
+  few extra words to suggest a likely solution, than to concisely say
+  what exact problems was found, but without helping the user towards
+  a solution.
