@@ -1,4 +1,4 @@
-% Objectives for the OCaml Developer-Experience
+# Objectives for the OCaml Developer-Experience
 
 The goal of this document is to sketch out goals for what the OCaml
 developer-experience should look like.  This is less about any
