@@ -8,7 +8,6 @@ to developers.
 The objectives themselves are phrased as statements that we want to be
 true, rather than things that have already been achieved.
 
-
 ## The experience for newbies is simple
 
 Part of this is that users should not be exposed to many different
@@ -18,8 +17,22 @@ majority of their interactions happen.
 Also, the experience for setting up a new project and starting to
 write code should have as few steps as possible.
 
+When there's a choice between keeping the newbie experience simple and
+conveniently supporting advanced workflows, we should prefer a simple
+newbie experience, though we should be more reluctant to make a
+sensible advanced workflow practically impossible.
+
 ## OCaml workflows are organized around a simple, understandable model
 
+We should aim for a single shared model for how code is organized,
+configured, and built.  Supporting legacy users is important, but
+we should be willing to deprecate and eventually abandon workflows
+that detract from that simple core.
+
+This strongly suggests we should move away from having an ambient
+environment that you just get by default.  The tools should really
+only work within a directory that's configured, in much the same way
+that Rust's tooling works.
 
 ## The workflow for newbies scales up seamlessly to larger projects
 
