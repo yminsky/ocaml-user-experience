@@ -1,4 +1,4 @@
-# Objectives for the OCaml Developer-Experience
+# Objectives for the OCaml Developer Experience
 
 The goal of this document is to sketch out goals for what the OCaml
 developer-experience should look like.  This is less about any
@@ -22,12 +22,12 @@ conveniently supporting advanced workflows, we should prefer a simple
 newbie experience, though we should be more reluctant to make a
 sensible advanced workflow practically impossible.
 
-## OCaml workflows are organized around a simple, understandable model
+## Workflows are built around a simple, understandable model
 
 We should aim for a single shared model for how code is organized,
-configured, and built.  Supporting legacy users is important, but
-we should be willing to deprecate and eventually abandon workflows
-that detract from that simple core.
+configured, and built.  Supporting legacy users is important, but we
+should be willing to deprecate and eventually abandon workflows that
+detract from having a simple core.
 
 This strongly suggests we should move away from having an ambient
 environment that you just get by default.  The tools should really
