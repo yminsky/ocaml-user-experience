@@ -63,32 +63,6 @@ configuration on the command line, it has to go somewhere.  That place
 should be in config files in the directory that you've set up for
 OCaml use.
 
-## Editing configs
-
-## No ambient install
-
-Today, opam by default installs OCaml along with a set of libraries
-and tools that are in your PATH by default, and you can mutate that
-default by changing your switch.
-
-This workflow should go away entirely (except when you directly invoke
-the now deprecated opam command-line tool, and that should eventually
-simply be retired.)  You can only set up OCaml within a directory.
-
-## Watch-mode as the default
-
-The user experience should default to using watch-mode, and having
-good ways for users to see errors when they come up.  This is
-important because it provides a fast form of feedback when editing
-configs.
-
-## Batch interaction is first class
-
-Despite watch-mode being the default experience, batch interaction,
-where you directly instruct the building of a given item, should be
-first class, and should work in a predictable way.  This is important
-because batch interaction needs to work well when scripting a build.
-Also, it's an approach that some power users will strongly prefer.
 
 ## Configs should be discoverable and easy to edit
 
@@ -117,3 +91,28 @@ auto-generated, so they never need to be edited by users.  Another
 approach would be for opam files to be usable as a transitional
 matter, but to not be required in cases where configs are fully
 contained in Dune.
+
+## No ambient install
+
+Today, opam by default installs OCaml along with a set of libraries
+and tools that are in your PATH by default, and you can mutate that
+default by changing your switch.
+
+This workflow should go away entirely (except when you directly invoke
+the now deprecated opam command-line tool, and that should eventually
+simply be retired.)  You can only set up OCaml within a directory.
+
+## Watch-mode as the default...
+
+The user experience should default to using watch-mode, and having
+good ways for users to see errors when they come up.  This is
+important because it provides a fast form of feedback when editing
+configs.
+
+## ...but batch interaction is first class
+
+Despite watch-mode being the default experience, batch interaction,
+where you directly instruct the building of a given item, should be
+first class, and should work in a predictable way.  This is important
+because batch interaction needs to work well when scripting a build.
+Also, it's an approach that some power users will strongly prefer.
