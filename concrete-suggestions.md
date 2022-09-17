@@ -1,5 +1,3 @@
-# Concrete suggestions
-
 Some concrete ideas about how the core OCaml workflow should work.
 
 ## Dune (and the editor) as the primary front-end
