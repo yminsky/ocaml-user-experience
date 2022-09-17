@@ -79,14 +79,14 @@ few things:
 updating configs?  This is in tension with the goal of keeping the
 command-line minimal.
 
-Also, it's important that there be a simple and minimal set of config
-files, and it should be clear when you have to use one file or
-another.  And users shouldn't have to edit config files in multiple
-different formats.
+Also, it's important that the set of config files that need to be
+edited is small, and it should be clear when you have to use one file
+or another.  Also, there should be one basic file format across all
+tools.
 
-This suggests that there should be no free-standing opam config
-files, but this may be impractical for compatibility and transition
-reasons.  A reasonable alternative is to have opam config files be
+This suggests that there should be no free-standing opam config files,
+but this may be impractical for compatibility and transition reasons.
+A reasonable alternative is to have opam config files be
 auto-generated, so they never need to be edited by users.  Another
 approach would be for opam files to be usable as a transitional
 matter, but to not be required in cases where configs are fully
