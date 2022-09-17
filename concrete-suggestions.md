@@ -130,3 +130,29 @@ Instead, we should make it easy to build and publish reproducible
 artefacts that can be published on the public opam repository without
 requiring separate commands.
 
+## ...and the dependency manager for libraries and packages
+
+We currently have three separate namespaces developers have
+to manage: individual modules, libraries (sets of modules),
+and opam packages.  Dune currently works at the library level,
+and defers to opam for some of its knowledge about packages.
+An opam environment that is external to dune will supply
+dependencies, but this requires the user to manage both the
+project and the opam state.
+
+For example, if a user wants to use the `Cohttp_async` module,
+they have to find out that it's in the `cohttp-async` library,
+and then `opam install cohttp-async` from opam to get the
+package.  Then, they have to edit the `dune-project` file to
+add both the `cohttp-async` library _and_ the `cohttp-async`
+opam package.  If they forget any of these steps, the project
+will fail to build the next time around.
+
+Instead, dune could watch for edits to `dune-project` files
+for new libraries and packages, and fetch the dependencies
+in the background (for example, to the `duniverse/` directory)
+automatically as a build target.  It would then recompile the
+project normally with the new dependencies.  For bonus points,
+we could maintain a central module-to-library-to-package
+mapping that would autocomplete the right opam package when
+a module is referenced that isn't currently available.
