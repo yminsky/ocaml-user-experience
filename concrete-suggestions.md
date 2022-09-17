@@ -119,3 +119,14 @@ where you directly instruct the building of a given item, should be
 first class, and should work in a predictable way.  This is important
 because batch interaction needs to work well when scripting a build.
 Also, it's an approach that some power users will strongly prefer.
+
+## Dune as the package generator
+
+Dune can build and maintain opam package metadata as an output of
+its build.  It's extremely common to define multiple packages as part
+of a single dune build, but currently the user has to configure and
+invoke a separate `dune-release` command to publish these packages.
+Instead, we should make it easy to build and publish reproducible
+artefacts that can be published on the public opam repository without
+requiring separate commands.
+
