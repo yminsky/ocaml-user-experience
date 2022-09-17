@@ -8,7 +8,7 @@ to developers.
 The objectives themselves are phrased as statements that we want to be
 true, rather than things that have already been achieved.
 
-## The experience for newbies is simple
+## It's easy for newbies to get started
 
 Part of this is that users should not be exposed to many different
 control services.  Users should have a single tool through which the
@@ -22,17 +22,15 @@ conveniently supporting advanced workflows, we should prefer a simple
 newbie experience, though we should be more reluctant to make a
 sensible advanced workflow practically impossible.
 
-## Workflows are built around a simple, understandable model
+## Workflows are built around a coherent, understandable model
 
-We should aim for a single shared model for how code is organized,
-configured, and built.  Supporting legacy users is important, but we
-should be willing to deprecate and eventually abandon workflows that
-detract from having a simple core.
+It's not enough for it to be easy to get started.  The development
+model should also have a simple model that developers can reason
+about.  When possible, we should remove complexity, rather than cover
+it over with convenient tools.
 
-This strongly suggests we should move away from having an ambient
-environment that you just get by default.  The tools should really
-only work within a directory that's configured, in much the same way
-that Rust's tooling works.
+While supporting legacy users is important, we should deprecate and
+eventually abandon workflows that detract from having a simple core.
 
 ## The workflow for newbies scales up seamlessly to larger projects
 

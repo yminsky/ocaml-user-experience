@@ -19,5 +19,3 @@ tutorial to cover?
     a way that's going to come out when someone needs to write their
     own docker setup, or to do a local install. So there's a real
     tradeoff here.
-
-###
