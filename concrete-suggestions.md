@@ -7,7 +7,7 @@ interact with on a regular basis, and on the command-line, that tool
 should be dune.
 
 For users who prefer an IDE-style experience, like that available in
-vscode and in emacs if it is configured for it, the editor itself
+vscode (and in emacs, when configured as such), the editor itself
 should be the primary interface.  The command-line should be
 convenient and intuitive to use alongside the editor, but users should
 rarely or never need to reach for the command-line.
@@ -19,14 +19,17 @@ They do this in different ways: opam isn't a full build system,
 instead invoking the build system chosen for each package, whereas
 dune takes full control over the build.
 
-We should unify these two different bits of functionality.  Package
-authors can still use whatever build system they want, but they must
-integrate with dune, as a foreign build.
+We should unify these.  Package authors can still use whatever build
+system they want, but they must integrate with dune, as a foreign
+build.  And the process of creating a foreign build should be smooth:
+simple to set up, and well documented.
 
-The process of creating a foreign build should be smooth: simple to
-set up, and well documented.  But functionality should be added only
-for dune users when that will make it materially easier to make
-progress and improve the developer experience.
+But it will be easier to improve the user experience in a variety of
+ways for packages built entirely with dune, since dune will have more
+complete knowledge of the build which it can leverage for both
+performance and various user conveniences.  And so it's fine and
+expected that the best user experience will be for code built entirely
+with dune.
 
 We shouldn't describe this as a "monorepo" workflow.  A true monorepo
 workflow is where you commit the code of all packages you're using
