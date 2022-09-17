@@ -44,7 +44,7 @@ shouldn't be a need to completely shift tools or approaches as a
 project grows and evolves.
 
 Similarly, it should be as easy for new users to get started with building
-a large OCaml project as it is for a simple one
+a large OCaml project as it is for a simple one.
 
 ## The tools are opinionated and have good defaults
 
