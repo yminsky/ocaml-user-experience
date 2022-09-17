@@ -43,6 +43,9 @@ But that extra complexity should come incrementally, and their
 shouldn't be a need to completely shift tools or approaches as a
 project grows and evolves.
 
+Similarly, it should be as easy for new users to get started with building
+a large OCaml project as it is for a simple one
+
 ## The tools are opinionated and have good defaults
 
 Part of the way that we make the newbie experience simple is by making
@@ -95,3 +98,11 @@ For example:
   few extra words to suggest a likely solution, than to concisely say
   what exact problems was found, but without helping the user towards
   a solution.
+
+## Sharing code and docs should be straightforward
+
+There should be little gap between developing OCaml code, and getting
+the project into a form where it can be published.  Ideally, errors
+that make a project unsuitable for publication on opam (e.g. metadata
+or dependency errors) should be caught during the normal development
+workflows and not upon submission to a central package repository.
