@@ -3,7 +3,7 @@
 This section includes the tutorial we wish we could write for the
 OCaml tools.  Still very much in development.
 
-## The ideal experience
+## The ideal experience
 
 The ideal setup experience is to... have no steps at all.
 This is possible recently by using [devcontainers](https://containers.dev),
